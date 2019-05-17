@@ -1,26 +1,12 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
 
-function Button(props) {
-    return (
-        <ButtonComponent
-            className={props.className}
-            secondary={props.secondary}
-        >
-            {props.children}
-        </ButtonComponent>
-    )
-}
-
-export default Button;
-
-const ButtonComponent = styled.button`
+const Button = styled.button`
     color: #FFF;
     border-radius: 0.25rem;
     background-color: #007BFF;
     border: 1px solid #007BFF;
     box-shadow: 0;
-    font-size: 3em;
+    font-size: 1.2em;
 
     &:hover {
         background-color: #0069D9;
@@ -40,3 +26,5 @@ const ButtonComponent = styled.button`
         }
     `}
 `;
+
+export default Button;
