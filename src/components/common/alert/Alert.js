@@ -12,7 +12,7 @@ function Alert(props) {
                     <AlertTitle>{props.title}</AlertTitle>
                     <CloseBtn 
                         src={closeBtn} 
-                        alt="Close modal button" 
+                        alt="Close alert button" 
                         onClick={props.onClick} 
                     />
                 </AlertHeader>
