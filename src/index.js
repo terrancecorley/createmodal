@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Modal from './components/common/modal';
+import TriggerAlert from './components/TriggerAlert';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Modal />, document.getElementById('root'));
+ReactDOM.render(<TriggerAlert />, document.getElementById('root'));
 serviceWorker.unregister();
