@@ -8,7 +8,9 @@ function Alert(props) {
         <>
             <Overlay className={props.overlayClass}></Overlay>
             <AlertWrapper>
-                <AlertHeader>
+                <AlertHeader
+                    className={props.alertHeaderClass}
+                >
                     <AlertTitle>{props.title}</AlertTitle>
                     <CloseBtn 
                         src={closeBtn} 

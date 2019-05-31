@@ -19,26 +19,29 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "terrance_corley.stepstonedemo/alert@1.0.1": {
+    "terrance_corley.stepstonedemo/alert@1.0.2": {
         "files": [
             {
+                "name": "Alert.js",
                 "relativePath": "src/components/common/alert/Alert.js",
-                "test": false,
-                "name": "Alert.js"
+                "test": false
             },
             {
+                "name": "index.js",
                 "relativePath": "src/components/common/alert/index.js",
-                "test": false,
-                "name": "index.js"
+                "test": false
             },
             {
+                "name": "close-btn.svg",
                 "relativePath": "src/images/close-btn.svg",
-                "test": false,
-                "name": "close-btn.svg"
+                "test": false
             }
         ],
         "mainFile": "src/components/common/alert/index.js",
         "origin": "AUTHORED",
+        "dependencies": [
+            "terrance_corley.stepstonedemo/button@1.0.0"
+        ],
         "exported": true
     },
     "version": "14.0.6"
