@@ -110,7 +110,9 @@ function _templateObject() {
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 function Alert(props) {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(Overlay, null), _react.default.createElement(AlertWrapper, null, _react.default.createElement(AlertHeader, null, _react.default.createElement(AlertTitle, null, props.title), _react.default.createElement(CloseBtn, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(Overlay, {
+    className: props.overlayClass
+  }), _react.default.createElement(AlertWrapper, null, _react.default.createElement(AlertHeader, null, _react.default.createElement(AlertTitle, null, props.title), _react.default.createElement(CloseBtn, {
     src: _closeBtn.default,
     alt: "Close alert button",
     onClick: props.onClick

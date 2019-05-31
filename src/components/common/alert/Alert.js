@@ -6,7 +6,7 @@ import closeBtn from '../../../images/close-btn.svg';
 function Alert(props) {
     return (
         <>
-            <Overlay></Overlay>
+            <Overlay className={props.overlayClass}></Overlay>
             <AlertWrapper>
                 <AlertHeader>
                     <AlertTitle>{props.title}</AlertTitle>
