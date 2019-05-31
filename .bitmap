@@ -19,12 +19,17 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "terrance_corley.stepstonedemo/alert@1.0.2": {
+    "terrance_corley.stepstonedemo/alert@1.0.3": {
         "files": [
             {
                 "name": "Alert.js",
                 "relativePath": "src/components/common/alert/Alert.js",
                 "test": false
+            },
+            {
+                "relativePath": "src/components/common/alert/README.md",
+                "test": false,
+                "name": "README.md"
             },
             {
                 "name": "index.js",

@@ -11,7 +11,7 @@ function Alert(props) {
                 <AlertHeader
                     className={props.alertHeaderClass}
                 >
-                    <AlertTitle>{props.title}</AlertTitle>
+                    <AlertTitle>{props.title || 'This is an example title'}</AlertTitle>
                     <CloseBtn 
                         src={closeBtn} 
                         alt="Close alert button" 
@@ -19,7 +19,7 @@ function Alert(props) {
                     />
                 </AlertHeader>
                 <AlertBody>
-                    {props.children}
+                    {props.children || 'This is an example alert sentence.'}
                     <AlertButtonWrapper>
                         <OkayButton onClick={props.onClick}>Okay</OkayButton>
                     </AlertButtonWrapper>
@@ -77,6 +77,7 @@ const AlertTitle = styled.h2`
 `;
 
 const CloseBtn = styled.img`
+    margin-left: 2em;
 `;
 
 const AlertBody = styled.div`

@@ -28,10 +28,8 @@ class TriggerAlert extends Component {
                 <AlertButton onClick={this.handleDisplayAlert}>Click Meh</AlertButton>
                 {displayAlert &&
                     <Alert
-                        title="StepStone Alert"
                         onClick={this.handleCloseAlert}
                     >
-                        This is an alert for StepStone Group demo purposes.
                     </Alert>
                 }
             </>

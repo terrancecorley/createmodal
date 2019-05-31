@@ -48,7 +48,7 @@ function _templateObject7() {
 }
 
 function _templateObject6() {
-  var data = _taggedTemplateLiteral(["\n"]);
+  var data = _taggedTemplateLiteral(["\n    margin-left: 2em;\n"]);
 
   _templateObject6 = function _templateObject6() {
     return data;
@@ -112,11 +112,13 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 function Alert(props) {
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(Overlay, {
     className: props.overlayClass
-  }), _react.default.createElement(AlertWrapper, null, _react.default.createElement(AlertHeader, null, _react.default.createElement(AlertTitle, null, props.title), _react.default.createElement(CloseBtn, {
+  }), _react.default.createElement(AlertWrapper, null, _react.default.createElement(AlertHeader, {
+    className: props.alertHeaderClass
+  }, _react.default.createElement(AlertTitle, null, props.title || 'This is an example title'), _react.default.createElement(CloseBtn, {
     src: _closeBtn.default,
     alt: "Close alert button",
     onClick: props.onClick
-  })), _react.default.createElement(AlertBody, null, props.children, _react.default.createElement(AlertButtonWrapper, null, _react.default.createElement(OkayButton, {
+  })), _react.default.createElement(AlertBody, null, props.children || 'This is an example alert sentence.', _react.default.createElement(AlertButtonWrapper, null, _react.default.createElement(OkayButton, {
     onClick: props.onClick
   }, "Okay")))));
 }
